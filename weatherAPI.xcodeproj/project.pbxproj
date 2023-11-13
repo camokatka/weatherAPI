@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		01C128CC2AFD1F11005AA9FB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C128CB2AFD1F11005AA9FB /* AppDelegate.swift */; };
 		01C128CE2AFD1F11005AA9FB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C128CD2AFD1F11005AA9FB /* SceneDelegate.swift */; };
-		01C128D02AFD1F11005AA9FB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C128CF2AFD1F11005AA9FB /* ViewController.swift */; };
-		01C128D32AFD1F11005AA9FB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C128D12AFD1F11005AA9FB /* Main.storyboard */; };
+		01C128D02AFD1F11005AA9FB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C128CF2AFD1F11005AA9FB /* MainViewController.swift */; };
 		01C128D52AFD1F19005AA9FB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 01C128D42AFD1F19005AA9FB /* Assets.xcassets */; };
 		01C128D82AFD1F19005AA9FB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01C128D62AFD1F19005AA9FB /* LaunchScreen.storyboard */; };
+		01C128E02AFE28D5005AA9FB /* Struct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01C128DF2AFE28D5005AA9FB /* Struct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		01C128C82AFD1F11005AA9FB /* weatherAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weatherAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01C128CB2AFD1F11005AA9FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01C128CD2AFD1F11005AA9FB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		01C128CF2AFD1F11005AA9FB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		01C128D22AFD1F11005AA9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		01C128CF2AFD1F11005AA9FB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		01C128D42AFD1F19005AA9FB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		01C128D72AFD1F19005AA9FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		01C128D92AFD1F19005AA9FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		01C128DF2AFE28D5005AA9FB /* Struct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Struct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				01C128CB2AFD1F11005AA9FB /* AppDelegate.swift */,
 				01C128CD2AFD1F11005AA9FB /* SceneDelegate.swift */,
-				01C128CF2AFD1F11005AA9FB /* ViewController.swift */,
-				01C128D12AFD1F11005AA9FB /* Main.storyboard */,
+				01C128CF2AFD1F11005AA9FB /* MainViewController.swift */,
+				01C128DF2AFE28D5005AA9FB /* Struct.swift */,
 				01C128D42AFD1F19005AA9FB /* Assets.xcassets */,
 				01C128D62AFD1F19005AA9FB /* LaunchScreen.storyboard */,
 				01C128D92AFD1F19005AA9FB /* Info.plist */,
@@ -127,7 +127,6 @@
 			files = (
 				01C128D82AFD1F19005AA9FB /* LaunchScreen.storyboard in Resources */,
 				01C128D52AFD1F19005AA9FB /* Assets.xcassets in Resources */,
-				01C128D32AFD1F11005AA9FB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +137,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				01C128D02AFD1F11005AA9FB /* ViewController.swift in Sources */,
+				01C128E02AFE28D5005AA9FB /* Struct.swift in Sources */,
+				01C128D02AFD1F11005AA9FB /* MainViewController.swift in Sources */,
 				01C128CC2AFD1F11005AA9FB /* AppDelegate.swift in Sources */,
 				01C128CE2AFD1F11005AA9FB /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +147,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		01C128D12AFD1F11005AA9FB /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				01C128D22AFD1F11005AA9FB /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		01C128D62AFD1F19005AA9FB /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -292,7 +284,6 @@
 				INFOPLIST_FILE = weatherAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -320,7 +311,6 @@
 				INFOPLIST_FILE = weatherAPI/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
